@@ -30,7 +30,7 @@ type ItemListed @entity(immutable: false) {
   transactionHash: Bytes
 }
 
-type ActiveItem @entity(immutable: false) {
+type ActiveItem @entity {
   id: ID!
   buyer: Bytes! # address. 0x0000... if no one bought yet
   seller: Bytes! # address
